@@ -1,6 +1,6 @@
 package MusicShop.Accessories;
 
-import MusicShop.StockItem;
+import MusicShop.Shop.StockItem;
 
 public abstract class Accessory extends StockItem {
 

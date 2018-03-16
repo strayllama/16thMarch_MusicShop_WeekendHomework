@@ -10,17 +10,17 @@ public class TestPiano {
 
     @Before
     public void before() {
-     aPiano = new Piano(350,500,"Yamaha", "P500", InstrumentType.KEYS, 105, "Grand");
+     aPiano = new Piano(2500,4000,"Yamaha", "Stage Master", InstrumentType.KEYS, 105, "Grand");
     }
 
     @Test
     public void pianoHasBuyPrice() {
-        assertEquals(350, aPiano.getBuyPrice());
+        assertEquals(2500, aPiano.getBuyPrice());
     }
 
     @Test
     public void pianoHasSellPrice() {
-        assertEquals(500, aPiano.getSellPrice());
+        assertEquals(4000, aPiano.getSellPrice());
     }
 
     @Test
@@ -30,7 +30,7 @@ public class TestPiano {
 
     @Test
     public void pianoHasModel() {
-        assertEquals("P500", aPiano.getModel());
+        assertEquals("Stage Master", aPiano.getModel());
     }
 
     @Test
@@ -51,6 +51,7 @@ public class TestPiano {
 
     @Test
     public void pianoCalcMarkup() {
-        assertEquals(150, aPiano.calculateMarkup());
+        assertEquals(1500, aPiano.calculateMarkup());
     }
+
 }

@@ -1,12 +1,12 @@
 package MusicShop.Instruments;
 
 import Behaviors.IPlay;
-import MusicShop.StockItem;
+import MusicShop.Shop.StockItem;
 
 public abstract class Instrument extends StockItem implements IPlay {
     private InstrumentType type;
 
-    Instrument(int buyPrice, int sellPrice,String make, String model, InstrumentType type ){
+    public Instrument(int buyPrice, int sellPrice,String make, String model, InstrumentType type ){
         super(buyPrice, sellPrice, make, model);
         this.type = type;
     }
